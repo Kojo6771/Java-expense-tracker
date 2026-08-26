@@ -63,5 +63,21 @@ public class Expense  {
         return name;
     }
 
+    @Override
+    public String toString(){
+        StringBuilder expense = new StringBuilder();
+        expense.append("Expense{id=")
+               .append(id)
+               .append(", name='")
+               .append(name)
+               .append("', amount=")
+               .append(amount)
+               .append(", date=")
+               .append(date)
+               .append(", category=")
+               .append(category)
+               .append("}");
+        return expense.toString();
+    }
     
 }
