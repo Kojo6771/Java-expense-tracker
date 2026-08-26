@@ -12,6 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        //Expense object
         Expense expense = new Expense(
             1,
             "Car finance",
