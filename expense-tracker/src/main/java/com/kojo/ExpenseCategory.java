@@ -1,33 +1,22 @@
 package com.kojo;
 
 
-public class ExpenseCategory {
-    private String name;
-
-
-    //ExpenseCategory constructor
-    public ExpenseCategory(String name){
-        this.name = name;
-    }
-    
-    //ExpenseCategory get method
-    public String getName(){
-        return name;
-    }
-
-    //ExpenseCategory set method
-    public void setName(String name){
-        this.name = name;
-    }
-
-
-
-
-
-
-
-
-
-
-
+public enum ExpenseCategory {
+    FOOD,
+    TRAVEL,
+    ENTERTAINMENT,
+    BILLS,
+    SHOPPING,
+    OTHER
 }
+   
+
+
+
+
+
+
+
+
+
+
