@@ -12,7 +12,7 @@ public class Expense  {
     private int id;
 
     //constructor for expense object
-    public Expense(BigDecimal amount, LocalDate date, ExpenseCategory category, String name, int id){
+    public Expense(int id, String name,BigDecimal amount, LocalDate date, ExpenseCategory category){
         //Making constuction match fields
         this.amount = amount;
         this.date = date;
