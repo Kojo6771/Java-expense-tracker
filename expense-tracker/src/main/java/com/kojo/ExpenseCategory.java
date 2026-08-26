@@ -6,7 +6,7 @@ public class ExpenseCategory {
 
 
     //ExpenseCategory constructor
-    public ExpenseCategory(Sring name){
+    public ExpenseCategory(String name){
         this.name = name;
     }
     
