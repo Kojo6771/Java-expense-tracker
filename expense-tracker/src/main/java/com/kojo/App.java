@@ -20,6 +20,24 @@ public class App
             LocalDate.of(2026, 7, 1),
             ExpenseCategory.BILLS
 );
-            System.out.println( expense );
+
+        ExpenseManager manager = new ExpenseManager();
+        manager.addExpense(expense);
+        System.out.println( expense );
+
+        Expense foundExpense = manager.findExpense(1);
+
+        if (foundExpense != null) {
+        System.out.println(foundExpense);
+        } else {
+        System.out.println("Expense not found.");
+        }
+
+
+
+        System.out.println("Total expenses: £" + manager.calculateTotal());
+
     }
+
+
 }
