@@ -47,6 +47,11 @@ public class Expense  {
         return id;
     }
 
+    //set method for ID
+    public void setID(int id){
+        this.id = id;
+    }
+
     public BigDecimal getAmount(){
         return amount;
     }

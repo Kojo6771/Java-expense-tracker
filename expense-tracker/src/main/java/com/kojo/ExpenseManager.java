@@ -6,6 +6,8 @@ import java.util.List;
 public class ExpenseManager {
     //Expenses array list field
     private final List<Expense> expenses;
+    //Counter for auto-incrementing IDs
+    private int nextId = 1;
     
 
     //Constructor of the ExpenseManager
@@ -18,11 +20,11 @@ public class ExpenseManager {
     //Adds an expense to the list
     public void addExpense(Expense expense){
         if(expense != null){
+            expense.setID(nextId++);
             expenses.add(expense);
-        } else { throw new IllegalArgumentException("Expense cannot be null");
-
+        } else { 
+            throw new IllegalArgumentException("Expense cannot be null");
         }
-            
     }
 
 
@@ -41,6 +43,7 @@ public class ExpenseManager {
         }
         return null;
     }
+
 
     //Method to calculate the total expenses
     public BigDecimal calculateTotal(){
